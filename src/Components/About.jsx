@@ -3,7 +3,7 @@ import "./css/About.css";
 
 function About({ theme }) {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <span className="top para">
         I am a passionate UI Engineer who bridges the gap between development
         and design.{" "}

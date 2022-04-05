@@ -13,7 +13,9 @@ import "./css/Skills.css";
 
 function Skills({ theme }) {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
+      <img src={patternR} alt="" className="pattern-right" />
+      <img src={patternL} alt="" className="pattern-left" />
       <div className="skills-head" style={{ color: `${theme.accent}` }}>
         My Skills
       </div>

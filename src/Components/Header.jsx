@@ -21,35 +21,35 @@ function Header({ theme, changeTheme }) {
         <img src={isLight ? logodark : logo} alt="" className="logo-icon" />
         <nav>
           <a
-            href="/"
+            href="#"
             className="header-link"
             style={{ color: `${theme.text}` }}
           >
             Home
           </a>
           <a
-            href="/"
+            href="#about"
             className="header-link"
             style={{ color: `${theme.text}` }}
           >
             About
           </a>
           <a
-            href="/"
+            href="#skills"
             className="header-link"
             style={{ color: `${theme.text}` }}
           >
             Skills
           </a>
           <a
-            href="/"
+            href="#projects"
             className="header-link"
             style={{ color: `${theme.text}` }}
           >
             Projects
           </a>
           <a
-            href="/"
+            href="#connect"
             className="header-link"
             style={{ color: `${theme.text}` }}
           >

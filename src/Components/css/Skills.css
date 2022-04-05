@@ -1,19 +1,36 @@
 .skills {
   text-align: left;
   padding: 2rem 0;
+  height: 80vh;
+  margin-top: 3rem;
+}
+
+.skills .pattern-right {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.skills .pattern-left {
+  position: absolute;
+  left: 0;
+  z-index: 1;
 }
 
 .skills .skills-head {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  z-index: 5;
 }
 
 .skills .skills-subhead {
   font-size: 1.5rem;
+  z-index: 5;
 }
 
 .skills .section {
+  z-index: 5;
   margin-top: 2rem;
 }
 
@@ -43,6 +60,13 @@
   .skills {
     padding: 2rem;
     text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .skills .pattern-left,
+  .skills .pattern-right {
+    display: none;
   }
   .skills .skills-head {
     font-size: 2.5rem;

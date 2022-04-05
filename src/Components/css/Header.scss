@@ -4,6 +4,7 @@ header {
   position: sticky;
   top: 0;
   transform: all 0.2s ease;
+  z-index: 100;
 
   .header {
     display: flex;

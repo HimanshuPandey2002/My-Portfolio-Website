@@ -1,18 +1,34 @@
 .skills {
   text-align: left;
   padding: 2rem 0;
+  height: 80vh;
+  margin-top: 3rem;
 
+  .pattern-right {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  .pattern-left {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
   .skills-head {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    z-index: 5;
   }
 
   .skills-subhead {
     font-size: 1.5rem;
+    z-index: 5;
   }
 
   .section {
+    z-index: 5;
     margin-top: 2rem;
 
     .sec-head {
@@ -37,6 +53,12 @@
   .skills {
     padding: 2rem;
     text-align: center;
+    height: fit-content;
+
+    .pattern-left,
+    .pattern-right {
+      display: none;
+    }
 
     .skills-head {
       font-size: 2.5rem;

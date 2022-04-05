@@ -5,7 +5,7 @@ import "./css/Home.css";
 
 function Home({ theme }) {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="left">
         <div className="details">
           <div className="greet">Hello 👋🏻</div>

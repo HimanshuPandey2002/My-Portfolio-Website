@@ -10,7 +10,7 @@ import instagram from "../Assets/social/instagram.svg";
 
 function Footer({ theme }) {
   return (
-    <footer>
+    <footer id="connect">
       <img
         className="footer-curve"
         src={theme.name === "dark" ? footerCurve : footerCurveLight}
