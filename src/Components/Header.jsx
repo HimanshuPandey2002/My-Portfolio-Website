@@ -31,7 +31,7 @@ function Header({ theme, changeTheme }) {
           style={menu ? { display: "flex" } : { display: "none" }}
         >
           <a
-            href="#"
+            href="#home"
             className="header-link"
             style={{ color: `${theme.text}` }}
           >
