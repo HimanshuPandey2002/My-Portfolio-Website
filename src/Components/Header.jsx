@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/logo.svg";
 import logodark from "../Assets/logo-dark.svg";
 import sun from "../Assets/sun.png";
 import moon from "../Assets/moon.png";
+import menuDark from "../Assets/menu-dark.svg";
+import menuLight from "../Assets/menu-light.svg";
 import "./css/Header.css";
 
 function Header({ theme, changeTheme }) {
+  const [menu, setMenu] = useState(false);
   const isLight = theme.name === "light";
-
   const bgdark =
     "linear-gradient(rgba(32, 32, 34, 1),rgba(32, 32, 34, 1),rgba(32, 32, 34, 0.9),rgba(32, 32, 34, 0.6),rgba(32, 32, 34, 0.4),rgba(32, 32, 34, 0))";
   const bglight =
@@ -15,11 +17,19 @@ function Header({ theme, changeTheme }) {
 
   const bgColor = isLight ? bglight : bgdark;
 
+  const handleMenu = () => {
+    console.log("click");
+    setMenu(!menu);
+  };
+
   return (
     <header style={{ background: `${bgColor}` }}>
       <div className="app-container header">
         <img src={isLight ? logodark : logo} alt="" className="logo-icon" />
-        <nav>
+        <nav
+          onClick={handleMenu}
+          style={menu ? { display: "flex" } : { display: "none" }}
+        >
           <a
             href="#"
             className="header-link"
@@ -55,10 +65,18 @@ function Header({ theme, changeTheme }) {
           >
             Connect
           </a>
+        </nav>
+        <div className="sub-menu">
           <button className="theme-switcher">
             <img src={isLight ? moon : sun} alt="" onClick={changeTheme} />
           </button>
-        </nav>
+          <img
+            src={isLight ? menuDark : menuLight}
+            alt=""
+            className="menu"
+            onClick={handleMenu}
+          />
+        </div>
       </div>
     </header>
   );
