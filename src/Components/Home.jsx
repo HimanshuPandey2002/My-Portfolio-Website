@@ -1,5 +1,6 @@
 import React from "react";
 import illustration from "../Assets/project.svg";
+import Resume from "../Assets/Resume.pdf";
 import "./css/Home.css";
 
 function Home({ theme }) {
@@ -16,7 +17,9 @@ function Home({ theme }) {
             Computer Science Student and Front-end Developer
           </p>
           <div className="buttons">
-            <button
+            <a
+              href={Resume}
+              download
               className="resume btn"
               style={{
                 backgroundColor: `${theme.accent}`,
@@ -24,8 +27,16 @@ function Home({ theme }) {
               }}
             >
               Resume
-            </button>
-            <button className="connect btn">Let's Talk</button>
+            </a>
+            <a
+              href="mailto:schafermike960@gmail.com"
+              className="connect btn"
+              style={{
+                color: "#000",
+              }}
+            >
+              Let's Talk
+            </a>
           </div>
         </div>
       </div>

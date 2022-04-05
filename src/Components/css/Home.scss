@@ -34,6 +34,11 @@
         cursor: pointer;
         border: none;
         transition: opacity 0.2s ease;
+        text-decoration: none;
+      }
+
+      .connect {
+        background-color: rgb(238, 238, 238);
       }
 
       .btn:hover {

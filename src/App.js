@@ -27,11 +27,11 @@ function App() {
       <Header theme={theme} changeTheme={handleTheme} />
       <div className="app-container">
         <Home theme={theme} />
+        <About theme={theme} />
         <Skills theme={theme} />
         <Projects theme={theme} />
-        <About theme={theme} />
-        <Footer theme={theme} />
       </div>
+      <Footer theme={theme} />
     </div>
   );
 }

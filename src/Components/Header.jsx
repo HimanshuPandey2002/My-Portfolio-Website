@@ -8,8 +8,15 @@ import "./css/Header.css";
 function Header({ theme, changeTheme }) {
   const isLight = theme.name === "light";
 
+  const bgdark =
+    "linear-gradient(rgba(32, 32, 34, 1),rgba(32, 32, 34, 1),rgba(32, 32, 34, 0.9),rgba(32, 32, 34, 0.6),rgba(32, 32, 34, 0.4),rgba(32, 32, 34, 0))";
+  const bglight =
+    "linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0))";
+
+  const bgColor = isLight ? bglight : bgdark;
+
   return (
-    <header>
+    <header style={{ background: `${bgColor}` }}>
       <div className="app-container header">
         <img src={isLight ? logodark : logo} alt="" className="logo-icon" />
         <nav>

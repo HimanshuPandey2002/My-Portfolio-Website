@@ -48,6 +48,11 @@
   border: none;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.home .left .buttons .connect {
+  background-color: #eeeeee;
 }
 
 .home .left .buttons .btn:hover {

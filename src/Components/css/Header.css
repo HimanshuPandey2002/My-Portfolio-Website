@@ -1,6 +1,11 @@
 header {
   width: 100%;
   padding: 1rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-transform: all 0.2s ease;
+          transform: all 0.2s ease;
 }
 
 header .header {
