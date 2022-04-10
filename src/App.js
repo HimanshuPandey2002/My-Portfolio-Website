@@ -126,7 +126,7 @@ function App() {
       y: 50,
       opacity: 0,
       delay: 1,
-      scrollTrigger: "#btm",
+      scrollTrigger: "#skill-icons",
     });
 
     gsap.from(".social-link", {
