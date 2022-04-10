@@ -17,8 +17,10 @@ function Footer({ theme }) {
         alt=""
       />
       <div className="footer">
-        <div className="footer-head">Feel free to contact on social media.</div>
-        <div className="social">
+        <div className="footer-head" id="footer-head">
+          Feel free to contact on social media.
+        </div>
+        <div className="social" id="social">
           <a
             href="https://github.com/HimanshuPandey2002"
             className="social-link"
@@ -55,7 +57,7 @@ function Footer({ theme }) {
             <img src={instagram} alt="" className="social-icon" />
           </a>
         </div>
-        <div className="btm">Designed and Developed with ❤️ by Himanshu</div>
+        <div className="btm" id="btm">Designed and Developed with ❤️ by Himanshu</div>
       </div>
     </footer>
   );

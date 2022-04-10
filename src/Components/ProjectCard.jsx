@@ -3,7 +3,7 @@ import React from "react";
 function ProjectCard({ head, desc, live, code, image, theme }) {
   return (
     <div className="project-card">
-      <div className="left">
+      <div className="left" id="left">
         <div className="head">
           {head}
           <div
@@ -13,12 +13,14 @@ function ProjectCard({ head, desc, live, code, image, theme }) {
             {" "}
           </div>
         </div>
-        <p className="desc">{desc}</p>
+        <p className="desc" id="project-desc">
+          {desc}
+        </p>
         <div className="btm">
           <a
             href={live}
             target="blank"
-            className="live btn"
+            className="live btns"
             style={{
               borderColor: `${theme.accent}`,
               color: "white",
@@ -28,7 +30,7 @@ function ProjectCard({ head, desc, live, code, image, theme }) {
             {" "}
             See Live
           </a>
-          <a href={code} target="blank" className="src btn">
+          <a href={code} target="blank" className="src btns">
             Source Code
           </a>
         </div>

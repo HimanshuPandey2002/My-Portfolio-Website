@@ -2,14 +2,11 @@
   font-size: 3.2rem;
   height: 50vh;
   font-weight: bolder;
+  position: relative;
 
   .para {
-    opacity: 0.2;
-    transition: all 0.2s ease;
-    user-select: none;
-  }
-  .para:hover {
     opacity: 1;
+    transition: all 0.2s ease;
   }
 }
 

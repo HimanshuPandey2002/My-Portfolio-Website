@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import "./css/Projects.css";
 import projectImage from "../Assets/protostream.png";
@@ -16,7 +16,11 @@ function Projects({ theme }) {
 
   return (
     <div className="projects" id="projects">
-      <div className="project-head" style={{ color: `${theme.accent}` }}>
+      <div
+        className="project-head"
+        id="project-head"
+        style={{ color: `${theme.accent}` }}
+      >
         My Projects
       </div>
       <div className="cards">

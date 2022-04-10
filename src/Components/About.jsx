@@ -4,14 +4,14 @@ import "./css/About.css";
 function About({ theme }) {
   return (
     <div className="about" id="about">
-      <span className="top para">
+      <p className="top para" id="top-para">
         I am a passionate UI Engineer who bridges the gap between development
         and design.{" "}
-      </span>
-      <span className="bottom para">
+      </p>
+      <p className="bottom para" id="btm-para">
         I take responsibility to craft a good user experience using modern
         frontend architecture.
-      </span>
+      </p>
     </div>
   );
 }

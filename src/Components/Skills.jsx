@@ -16,16 +16,22 @@ function Skills({ theme }) {
     <div className="skills" id="skills">
       <img src={patternR} alt="" className="pattern-right" />
       <img src={patternL} alt="" className="pattern-left" />
-      <div className="skills-head" style={{ color: `${theme.accent}` }}>
+      <div
+        className="skills-head"
+        id="skills-head"
+        style={{ color: `${theme.accent}` }}
+      >
         My Skills
       </div>
-      <div className="skills-subhead">
+      <div className="skills-subhead" id="skills-subhead">
         I like to take responsibility to craft aesthetic user experience using
         modern frontend architecture.
       </div>
       <div className="section">
-        <div className="sec-head">Frontend Development</div>
-        <div className="skill-icons">
+        <div className="sec-head" id="sec-head">
+          Frontend Development
+        </div>
+        <div className="skill-icons" id="skill-icons">
           <img src={HTML} alt="" className="skill-icon" />
           <img src={CSS} alt="" className="skill-icon" />
           <img src={JS} alt="" className="skill-icon" />

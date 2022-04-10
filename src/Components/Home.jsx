@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import illustration from "../Assets/project.svg";
 import Resume from "../Assets/Resume.pdf";
 import "./css/Home.css";
+import { gsap } from "gsap";
 
 function Home({ theme }) {
   return (
@@ -13,10 +14,10 @@ function Home({ theme }) {
             I am{" "}
             <span style={{ color: `${theme.accent}` }}>Himanshu Pandey</span>
           </p>
-          <p className="desc">
+          <p className="desc" id="description">
             Computer Science Student and Front-end Developer
           </p>
-          <div className="buttons">
+          <div className="buttons" id="buttons">
             <a
               href={Resume}
               download

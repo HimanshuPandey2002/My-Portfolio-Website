@@ -2,20 +2,13 @@
   font-size: 3.2rem;
   height: 50vh;
   font-weight: bolder;
+  position: relative;
 }
 
 .about .para {
-  opacity: 0.2;
+  opacity: 1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.about .para:hover {
-  opacity: 1;
 }
 
 @media screen and (max-width: 414px) {
