@@ -1,8 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import illustration from "../Assets/project.svg";
 import Resume from "../Assets/Resume.pdf";
 import "./css/Home.css";
-import { gsap } from "gsap";
 
 function Home({ theme }) {
   return (
