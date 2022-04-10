@@ -126,7 +126,7 @@
   .projects .cards .project-card .left .btm {
     width: 100%;
   }
-  .projects .cards .project-card .left .btm .btn {
+  .projects .cards .project-card .left .btm .btns {
     font-size: 18px;
   }
 }
