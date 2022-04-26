@@ -5,7 +5,7 @@ import footerCurveLight from "../Assets/footer-curve-light.svg";
 import github from "../Assets/social/github.svg";
 import twitter from "../Assets/social/twitter.svg";
 import linkedin from "../Assets/social/linkedin.svg";
-import leetcode from "../Assets/social/github.svg";
+import leetcode from "../Assets/social/leetcode.svg";
 import instagram from "../Assets/social/instagram.svg";
 
 function Footer({ theme }) {
@@ -57,7 +57,9 @@ function Footer({ theme }) {
             <img src={instagram} alt="" className="social-icon" />
           </a>
         </div>
-        <div className="btm" id="btm">Designed and Developed with ❤️ by Himanshu</div>
+        <div className="btm" id="btm">
+          Designed and Developed with ❤️ by Himanshu
+        </div>
       </div>
     </footer>
   );

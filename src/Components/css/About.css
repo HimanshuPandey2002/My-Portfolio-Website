@@ -9,6 +9,7 @@
   opacity: 1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  margin: 2rem 0;
 }
 
 @media screen and (max-width: 414px) {
