@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 414px) {
   .about {
-    height: 100vh;
+    height: 60vh;
     padding: 2rem;
   }
   .about .para {

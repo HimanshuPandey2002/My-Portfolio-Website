@@ -100,7 +100,13 @@
     font-size: 1.2rem;
   }
   .skills .section .skill-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
+  }
+  .skills .section .skill-icons .skill-icon {
+    margin: 1rem 2rem;
   }
 }
 /*# sourceMappingURL=Skills.css.map */

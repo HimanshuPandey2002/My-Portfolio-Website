@@ -86,8 +86,15 @@
     }
 
     .section {
+      // background-color: red;
+
       .skill-icons {
+        justify-content: center;
         margin: auto;
+
+        .skill-icon{
+          margin: 1rem 2rem;
+        }
       }
     }
   }
