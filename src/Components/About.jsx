@@ -5,8 +5,8 @@ function About({ theme }) {
   return (
     <div className="about" id="about">
       <p className="top para" id="top-para">
-        I am a passionate UI Engineer who bridges the gap between development
-        and design.{" "}
+        I am a Computer Science & Engineering Student and a passionate frontend
+        web developer who bridges the gap between development and design.{" "}
       </p>
       <p className="bottom para" id="btm-para">
         I take responsibility to craft a good user experience using modern
